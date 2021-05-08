@@ -24,7 +24,7 @@ export const HeaderAuthorized = function(props) {
     return <Row>
                 <Col>
                     <Navbar bg="light" expand="lg">
-                        <Navbar.Brand href="/">Курсова Марусі</Navbar.Brand>
+                        <Navbar.Brand href="/">Дипломний проект</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
@@ -45,7 +45,7 @@ export const HeaderAuthorized = function(props) {
                                     {hasNewNotifications ? <Icon.BellFill size={24} /> : <Icon.Bell size={24} />}
                                 </Nav.Link>
                             </Nav>
-                            <Form inline>
+                            {/* <Form inline>
                                 <FormControl type="text" placeholder="" className="mr-sm-2" />
                                 <Button variant="outline-success">Пошук</Button>
                                 <Nav>
@@ -54,7 +54,7 @@ export const HeaderAuthorized = function(props) {
                                         <NavDropdown.Item href="#action/3.2">EN</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
-                            </Form>
+                            </Form> */}
                         </Navbar.Collapse>
                     </Navbar>
                 </Col>

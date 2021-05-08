@@ -13,7 +13,7 @@ export const HeaderNotAuthorized = function() {
     return <Row>
                 <Col>
                     <Navbar bg="light" expand="lg">
-                        <Navbar.Brand href="#home">Курсова Марусі</Navbar.Brand>
+                        <Navbar.Brand href="#home">Дипломний проект</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav>

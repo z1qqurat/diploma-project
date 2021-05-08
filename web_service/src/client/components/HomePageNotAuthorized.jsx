@@ -50,9 +50,9 @@ export const HomePageNotAuthorized = function() {
         return false;
     }
 
-    return <Row style={{ marginTop: 10}}>
+    return <Row style={{ marginTop: 50, marginLeft: 150 }}>
                 <Col md={1} />
-                <Col md={7}>
+                  {/* <Col md={7}>
                     <Jumbotron style={{ backgroundColor: '#f0f0f0'}}>
                         <h1 style={{ color: '#000000'}} >Створи своє портфоліо</h1>
                         <Row style={{ marginTop: 20}}>
@@ -70,9 +70,9 @@ export const HomePageNotAuthorized = function() {
                             </Col>
                         </Row>
                     </Jumbotron>
-                </Col>
-                <Col md={4}>
-                    <Row>
+                  </Col> */}
+                  <Col md={5}>
+                    <Row style={{ marginTop: 30 }}>
                         <Form
                             name="loginForm"
                             onSubmit={handleLogin}
@@ -92,8 +92,11 @@ export const HomePageNotAuthorized = function() {
                             <button type="submit" className="btn btn-primary btn-block">Вхід</button>
                         </Form>
                     </Row>
-                    <Row style={{ marginTop: 10 }}>
-                        <Form
+                  </Col>
+                  <Col md={1}></Col>
+                    <Col md={5}>
+                      <Row style={{ marginTop: 30 }}>
+                          <Form
                             name="registerForm"
                             onSubmit={handleRegister}
                             style={{ padding: "20px", width: 300, border: "1px solid black" }}>
@@ -120,10 +123,11 @@ export const HomePageNotAuthorized = function() {
                             </div>
 
                             <button type="submit" className="btn btn-primary btn-block">Реєстрація</button>
-                        </Form>
-                    </Row>
-                </Col>
-                <Col md={1} />
+                          </Form>
+                        </Row>
+                    </Col>
+             <Col />
+                {/* <Col md={1} /> */}
             </Row>;
 }
 

@@ -24,10 +24,20 @@ export const ProfilePage = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const designerIdParam = +urlParams.get('designerId');
     const designerId = designerIdParam || userCtxt.user.id;
-    const avatarUrl = userCtxt.user.avatar_url || "https://i.pravatar.cc/300";
+ //   const avatarUrl = userCtxt.user.avatar_url || "https://i.pravatar.cc/300";
+    const avatarUrl = userCtxt.user.avatar_url;
     const isCurrentUser = designerId === userCtxt.user.id;
 
     const [rating, setRating] = useState(0);
+    const [post, loadPostCount] = useState(0);
+
+    // const loadPostCount = () => {
+    //     apiWrapper.get(`/score/user?userId=${designerId}`)
+    //     .then(response => {
+    //         console.log(`Loaded rating ${response.data} for user ${designerId}`);
+    //         setRating(+response.data);
+    //     })
+    // }
 
     const loadRating = () => {
         apiWrapper.get(`/score/user?userId=${designerId}`)
