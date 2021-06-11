@@ -144,7 +144,7 @@ export const ProfilePage = function() {
                             activeColor="#ffd700"
                         />
                     </Row>
-                    <Row style={{ marginTop: 10}}>
+                    {/* <Row style={{ marginTop: 10}}>
                         <div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%', flexWrap: 'wrap'}}>
                             <Badge variant="success">#design</Badge>
                             <Badge variant="success">#motion</Badge>
@@ -153,16 +153,16 @@ export const ProfilePage = function() {
                             <Badge variant="success">#motion</Badge>
                             <Badge variant="success">#anime</Badge>
                         </div>
-                    </Row>
+                    </Row> */}
                     <Row style={{ marginTop: 10}}>
                         <Button block>Редагувати</Button>
                     </Row>
-                    <Row style={{ marginTop: 10}}>
+                    {/* <Row style={{ marginTop: 10}}>
                         <Button block>Написати</Button>
                     </Row>
                     <Row style={{ marginTop: 10}}>
                         <Button block>Статистика</Button>
-                    </Row>
+                    </Row> */}
                 </Col>
                 <Col md={7} style={{ marginLeft: 20 }}>
                     <Row>
@@ -178,11 +178,11 @@ export const ProfilePage = function() {
                             <tbody>
                                 <tr>
                                     <td>Стиль:</td>
-                                    <td>Stopmotion/motion</td>
+                                    <td>Ретуш</td>
                                 </tr>
                                 <tr>
-                                    <td>Платформа:</td>
-                                    <td>Android/iOS</td>
+                                    <td>Вид діяльності:</td>
+                                    <td>Онлайн</td>
                                 </tr>
                             </tbody>
                         </Table>
@@ -201,11 +201,11 @@ export const ProfilePage = function() {
                                                 <tbody>
                                                     <tr>
                                                         <td>Дата народження:</td>
-                                                        <td>01.01.1900</td>
+                                                        <td>18.06.2000</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Місто:</td>
-                                                        <td>Радехів</td>
+                                                        <td>Коломия</td>
                                                     </tr>
                                                 </tbody>
                                             </Table>
@@ -217,8 +217,8 @@ export const ProfilePage = function() {
                     <Row style={{ display: 'flex', justifyContent: 'space-around', marginTop: 10}}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>200</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">Колажів</Card.Subtitle>
+                                <Card.Title>2</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">Постів</Card.Subtitle>
                             </Card.Body>
                         </Card>
                         <Card>

@@ -5,7 +5,7 @@ const chatRouter = express.Router();
 chatRouter.get("/messages", async (req, res, next) => {
     const user = req.currentUser;
     const recipientId = req.body.recipientId;
-    const afterDatetime = req.body.afterDatetime;
+    // const afterDatetime = req.body.afterDatetime;
 });
 
 chatRouter.get("/chats", async (req, res, next) => {

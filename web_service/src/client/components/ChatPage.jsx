@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import {
   Row, Col, Button
 } from 'react-bootstrap';
@@ -18,72 +18,8 @@ const CHATS = [
   {
       avatar: 'https://i.pravatar.cc/300',
       alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
-      date: new Date(),
-      unread: 0,
-  },
-  {
-      avatar: 'https://i.pravatar.cc/300',
-      alt: ' ',
-      title: 'John Wick',
-      subtitle: 'What are you doing?',
+      title: 'Дана Долід',
+      subtitle: 'Як там моє замовлення?',
       date: new Date(),
       unread: 0,
   }
@@ -93,142 +29,162 @@ const MESSAGES = [
   {
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
     position: 'right',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'ТестТест',
     date: new Date(),
   },{
-    position: 'right',
+    position: 'left',
     type: 'text',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'Як там моє замовлення?',
     date: new Date(),
   }
 ]
 
+
+
 export default class ChatPage extends Component {
+
+  state = {
+    message: '...',
+  };
+
+ handleMessageChange = (e) => {
+    this.setState({message: e.target.value});
+ }
+
+ sentMessage = () => {
+  MESSAGES.push({
+    position: 'right',
+    type: 'text',
+    text: this.state.message,
+    date: new Date(),
+  });
+  this.setState({ message: '' });
+};
 
   render() {
     return (
@@ -254,9 +210,10 @@ export default class ChatPage extends Component {
           </Row>
           <Row>
           <Input
-            placeholder="Пишіть тут..."
+            value={this.state.message} 
+            onChange={this.handleMessageChange}
             rightButtons={
-                <Button>Надіслати</Button>
+                <Button onClick={this.sentMessage}>Надіслати</Button>
             }/>
           </Row>
         </Col>

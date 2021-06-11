@@ -41,9 +41,9 @@ export const HeaderAuthorized = function(props) {
                                 <Nav.Link as={Link} to="/messages" active={pathname === "/messages"}>
                                     {hasNewMessages ? <Icon.EnvelopeFill size={24} /> : <Icon.Envelope size={24} />}
                                 </Nav.Link>
-                                <Nav.Link as={Link} to="/messages" active={pathname === "/messages"}>
+                                {/* <Nav.Link as={Link} to="/messages" active={pathname === "/messages"}>
                                     {hasNewNotifications ? <Icon.BellFill size={24} /> : <Icon.Bell size={24} />}
-                                </Nav.Link>
+                                </Nav.Link> */}
                             </Nav>
                             {/* <Form inline>
                                 <FormControl type="text" placeholder="" className="mr-sm-2" />

@@ -36,7 +36,7 @@ export default class OrdersPage extends Component {
   render() {
     return (
         <Tabs style={{ marginTop: 10 }} activeKey={this.state.key} onSelect={k => this.setState({ key: k})}>
-            <Tab eventKey="designers" title="Знайти дизайнера">
+            <Tab eventKey="designers" title="Знайти замовлення">
                 <Row style={{ marginTop: 10 }}>
                     <Col md={1}/>
                     <Col md={4}>
@@ -49,13 +49,13 @@ export default class OrdersPage extends Component {
                                                 <Image
                                                     className="img-responsive"
                                                     style={{width: 90, height: 90, borderRadius: 45}}
-                                                    src="https://i.pravatar.cc/300" />
+                                                    src="https://i.imgur.com/I2CTXPT.png" />
                                             </Col>
                                             <Col>
-                                                <h6>James Bond</h6>
-                                                <div>Стиль: motion</div>
-                                                <div>Рейтинг: 4.5</div>
-                                                <div>Вартість: 500-1000</div>
+                                                <h6>Теодор Пухта</h6>
+                                                <div>Стиль: Ретуш</div>
+                                                <div>Рейтинг: 5</div>
+                                                <div>Вартість: 300</div>
                                             </Col>
                                         </Row>
                                     </Item>
@@ -64,22 +64,16 @@ export default class OrdersPage extends Component {
                         </ItemWrapper>
                     </Col>
                     <Col md={6} style={{ paddingLeft: 20}}>
-                        <Row><h3>Пошук дизайнера</h3></Row>
+                        <Row><h3>Пошук</h3></Row>
                         <Row>
                             <Form>
                                 <Form.Group>
-                                    <Form.Label>Стиль роботи</Form.Label>
+                                    <Form.Label>Вид роботи</Form.Label>
                                     <Form.Control as="select">
-                                        <option>колаж</option>
-                                        <option>stop motion</option>
-                                        <option>motion</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label>Платформа</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>Android</option>
-                                        <option>iOS</option>
+                                        <option>фотосесія</option>
+                                        <option>зйомка</option>
+                                        <option>ретуш</option>
+                                        <option>інше</option>
                                     </Form.Control>
                                 </Form.Group>
                                 <Form.Group>
@@ -96,26 +90,19 @@ export default class OrdersPage extends Component {
                                 <Form.Group>
                                     <Form.Label>Кількість виконаних замовлень</Form.Label>
                                     <Form.Control as="select">
-                                        <option>1-10</option>
-                                        <option>10-50</option>
-                                        <option>50-100</option>
-                                        <option>100+</option>
+                                        <option>1-20</option>
+                                        <option>21-50</option>
+                                        <option>51-100</option>
+                                        <option>101+</option>
                                     </Form.Control>
                                 </Form.Group>
                                 <Form.Group>
-                                    <Form.Label>Вартість колажу</Form.Label>
+                                    <Form.Label>Вартість</Form.Label>
                                     <Form.Control as="select">
-                                        <option>1-5</option>
-                                        <option>5-20</option>
-                                        <option>20+</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label>Вартість ролика</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>1-5</option>
-                                        <option>5-100</option>
-                                        <option>100+</option>
+                                        <option>1-200</option>
+                                        <option>201-500</option>
+                                        <option>501-1000</option>
+                                        <option>1000+</option>
                                     </Form.Control>
                                 </Form.Group>
                                 <Button variant="primary" type="submit">
@@ -127,7 +114,7 @@ export default class OrdersPage extends Component {
                     <Col md={1}/>
                 </Row>
             </Tab>
-            <Tab eventKey="orders" title="Замовлення">
+            <Tab eventKey="orders" title="Створити замовлення">
                 <Row style={{ marginTop: 10 }}>
                     <Col md={1}/>
                     <Col md={4}>
@@ -143,8 +130,8 @@ export default class OrdersPage extends Component {
                                                     src="https://i.pravatar.cc/300" />
                                             </Col>
                                             <Col>
-                                                <h6>James Bond</h6>
-                                                <div>Стиль: motion</div>
+                                                <h6>Микита Кривошея</h6>
+                                                <div>Стиль: Ретуш</div>
                                                 <div>Рейтинг: 4.5</div>
                                                 <div>Вартість: 500-1000</div>
                                             </Col>
@@ -159,18 +146,12 @@ export default class OrdersPage extends Component {
                         <Row>
                             <Form>
                                 <Form.Group>
-                                    <Form.Label>Стиль роботи</Form.Label>
+                                    <Form.Label>Вид роботи</Form.Label>
                                     <Form.Control as="select">
-                                        <option>колаж</option>
-                                        <option>stop motion</option>
-                                        <option>motion</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Label>Платформа</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>Android</option>
-                                        <option>iOS</option>
+                                        <option>фотосесія</option>
+                                        <option>зйомка</option>
+                                        <option>ретуш</option>
+                                        <option>інше</option>
                                     </Form.Control>
                                 </Form.Group>
                                 <Form.Group>
@@ -183,6 +164,10 @@ export default class OrdersPage extends Component {
                                     <Form.Control type="text"/>
                                 </Form.Group>
                                 <Form.Group>
+                                    <Form.Label>Опис</Form.Label>
+                                    <Form.Control type="text"/>
+                                </Form.Group>
+                                <Form.Group>
                                     <Form.Label>Пропозиція</Form.Label>
                                     <Form.Control as="select">
                                         <option>комерційна</option>
@@ -190,7 +175,7 @@ export default class OrdersPage extends Component {
                                     </Form.Control>
                                 </Form.Group>
                                 <Button variant="primary" type="submit">
-                                    Пошук
+                                    Створити
                                 </Button>
                             </Form>
                         </Row>

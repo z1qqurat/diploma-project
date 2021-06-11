@@ -12,13 +12,10 @@ Order.init({
     user_id: DataTypes.INTEGER,
     status_id: DataTypes.INTEGER,
     device_type_id: DataTypes.INTEGER,
-    contact_info: DataTypes.STRING,
     style: DataTypes.STRING,
     description: DataTypes.STRING,
-    from_date: DataTypes.DATE,
     due_date: DataTypes.DATE,
-    price_low: DataTypes.INTEGER,
-    price_high: DataTypes.INTEGER
+    price: DataTypes.INTEGER,
 }, { sequelize: dbWrapper, modelName: 'orders' });
 
 module.exports = Order;
